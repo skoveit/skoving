@@ -15,7 +15,7 @@ Here you will find detailed documentation for my open-source projects, CTF write
 !!! quote "The Philosophy"
     **No server. No domain. No single point of failure.**
 
-[Explore PHOENIX Documentation :arrow_right:](projects/docs/index.md){ .md-button .md-button--primary }
+[Explore PHOENIX Documentation :arrow_right:](projects/phoenix/index.md){ .md-button .md-button--primary }
 
 ---
 
@@ -28,7 +28,7 @@ The site is organized into the following sections:
 -   :material-server-network: **Projects**
 
     Deep dives into software architecture, design docs, and user manuals.  
-    [:arrow_right: Go to Projects](projects/docs/index.md)
+    [:arrow_right: Go to Projects](projects/phoenix/index.md)
 
 -   :material-flag: **Writeups** { .disabled }
 
@@ -47,9 +47,9 @@ The site is organized into the following sections:
 !!! info "Navigation Tip"
     Use the navigation tabs at the top of the page or the sidebar to browse content. You can also search the entire documentation using the search bar (or press `s`).
 
-*   **Installing PHOENIX**: [Getting Started Guide](projects/docs/getting-started/installation.md)
-*   **Understanding the Mesh**: [Network Architecture](projects/docs/architecture/networking.md)
-*   **Contributing**: [Developer Guidelines](projects/docs/development/contributing.md)
+*   **Installing PHOENIX**: [Getting Started Guide](projects/phoenix/getting-started/installation.md)
+*   **Understanding the Mesh**: [Network Architecture](projects/phoenix/architecture/networking.md)
+*   **Contributing**: [Developer Guidelines](projects/phoenix/development/contributing.md)
 
 ---
 
