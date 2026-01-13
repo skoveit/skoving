@@ -1,10 +1,16 @@
 site_name: Skoving
 site_url: http://127.0.0.1:8000/
 
+repo_url: https://github.com/skoveit/skoving
+repo_name: skoveit/skoving
+
 copyright: ""
 
 extra:
   generator: false
+
+extra_css:
+  - stylesheets/extra.css
 
 theme:
   name: material
@@ -91,7 +97,8 @@ nav:
 
       - Troubleshooting: projects/phoenix/troubleshooting.md
 
-  - Writeups: writeups/
+  - Writeups: writeups/index.md
 
-  - Blog:
-      - Overview: blog/index.md
+  - Blog: blog/index.md
+
+  - Notes: notes/index.md
