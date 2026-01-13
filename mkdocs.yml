@@ -1,0 +1,97 @@
+site_name: Skoving
+site_url: http://127.0.0.1:8000/
+
+copyright: ""
+
+extra:
+  generator: false
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.prune
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
+    - navigation.expand
+  palette:
+    - scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+    - scheme: default
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+  - tags
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+
+nav:
+  - Home: index.md
+
+  - Phoenix C2:
+      - Overview: projects/phoenix/index.md
+
+      - Getting Started:
+          - Installation: projects/phoenix/getting-started/installation.md
+          - Quickstart: projects/phoenix/getting-started/quickstart.md
+
+      - Architecture:
+          - Overview: projects/phoenix/architecture/overview.md
+          - Networking: projects/phoenix/architecture/networking.md
+          - Security: projects/phoenix/architecture/security.md
+
+      - Features:
+          - Discovery: projects/phoenix/features/discovery.md
+          - Commands: projects/phoenix/features/commands.md
+
+      - Development:
+          - Roadmap: projects/phoenix/development/roadmap.md
+          - Contributing: projects/phoenix/development/contributing.md
+
+      - Troubleshooting: projects/phoenix/troubleshooting.md
+
+  - Writeups: writeups/
+
+  - Blog:
+      - Overview: blog/index.md
