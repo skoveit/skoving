@@ -1,11 +1,11 @@
-# Contributing to PHOENIX
+# Contributing to SkoveNet
 
-We welcome contributions! PHOENIX is written in Go and aims for high code quality and minimal dependencies.
+We welcome contributions! SkoveNet is written in Go and aims for high code quality and minimal dependencies.
 
 ## Project Structure
 
 ```text
-nostalgia/
+skovenet/
 ├── cmd/            # Entry points (main.go)
 │   ├── agent/      # The agent binary
 │   └── controller/ # The operator CLI

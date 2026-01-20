@@ -1,6 +1,6 @@
 # System Architecture
 
-PHOENIX is designed as a pure peer-to-peer system. This section outlines the high-level components and data flow.
+SkoveNet is designed as a pure peer-to-peer system. This section outlines the high-level components and data flow.
 
 ## High-Level Diagram
 
@@ -42,7 +42,7 @@ How nodes find each other.
 *   **DHT** (Planned): Kademlia DHT for finding peers across the internet without central trackers.
 
 ### 4. Protocol (`pkg/protocol`)
-Defines the wire format for messages. PHOENIX uses a custom binary or JSON-based protocol over libp2p streams.
+Defines the wire format for messages. SkoveNet uses a custom binary or JSON-based protocol over libp2p streams.
 *   **ID**: `/mesh-c2/1.0.0`
 *   **Payloads**: Wrapped in envelope structures with routing metadata (TTL, Source, Target).
 

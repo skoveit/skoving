@@ -1,6 +1,6 @@
 # Installation Guide
 
-PHOENIX is built as a single, static binary with zero external dependencies. This makes deployment trivial across various operating systems.
+SkoveNet is built as a single, static binary with zero external dependencies. This makes deployment trivial across various operating systems.
 
 ## Prerequisites
 
@@ -13,8 +13,8 @@ PHOENIX is built as a single, static binary with zero external dependencies. Thi
 1.  **Clone the Repository**
 
     ```bash
-    git clone https://github.com/skoveit/nostalgia.git
-    cd nostalgia
+    git clone https://github.com/skoveit/skovenet.git
+    cd skovenet
     ```
 
 2.  **Build the Project**
@@ -38,8 +38,8 @@ PHOENIX is built as a single, static binary with zero external dependencies. Thi
     ```bash
     ls -l bin/
     # Should see:
-    # nostalgia-linux-amd64
-    # nostalgia-windows-amd64.exe
+    # skovenet-linux-amd64
+    # skovenet-windows-amd64.exe
     # ...
     ```
 
@@ -49,10 +49,10 @@ If you prefer to build manually for your specific architecture:
 
 ```bash
 # For current OS/Arch
-go build -o nostalgia cmd/agent/main.go
+go build -o skovenet cmd/agent/main.go
 
 # For standard Linux
-GOOS=linux GOARCH=amd64 go build -o nostalgia-linux cmd/agent/main.go
+GOOS=linux GOARCH=amd64 go build -o skovenet-linux cmd/agent/main.go
 ```
 
 ## Troubleshooting Build Issues

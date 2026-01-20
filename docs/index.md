@@ -8,14 +8,14 @@ Here you will find detailed documentation for my open-source projects, CTF write
 
 ## Featured Project
 
-### :fire: **PHOENIX**
+### :fire: **SkoveNet**
 
-**Project Nostalgia (PHOENIX)** is the flagship project documented here. It is a fully decentralized peer-to-peer (P2P) Command & Control (C2) system designed to be resilient, stealthy, and secure.
+**SkoveNet** is the flagship project documented here. It is a fully decentralized peer-to-peer (P2P) Command & Control (C2) system designed to be resilient, stealthy, and secure.
 
 !!! quote "The Philosophy"
     **No server. No domain. No single point of failure.**
 
-[Explore PHOENIX Documentation :arrow_right:](projects/phoenix){ .md-button .md-button--primary }
+[Explore SkoveNet Documentation :arrow_right:](projects/skovenet){ .md-button .md-button--primary }
 
 ---
 
@@ -28,17 +28,22 @@ The site is organized into the following sections:
 -   :material-server-network: **Projects**
 
     Deep dives into software architecture, design docs, and user manuals.  
-    [:arrow_right: Go to Projects](projects/phoenix)
+    [:arrow_right: Go to Projects](projects/skovenet)
 
--   :material-flag: **Writeups** { .disabled }
+-   :material-flag: **Writeups**
 
-    Walkthroughs and solutions for Capture The Flag (CTF) challenges and security assessments. *(Coming Soon)*
-    <!-- [:arrow_right: Go to Writeups](writeups/) -->
+    Walkthroughs and solutions for Capture The Flag (CTF) challenges and security assessments.
+    [:arrow_right: Go to Writeups](writeups/index.md)
 
--   :material-post: **Blog**
+-   :material-flask: **Research** { .disabled }
 
-    Technical articles, tutorials, and updates on ongoing research.  
-    [:arrow_right: Go to Blog](blog/index.md)
+    Technical articles, tutorials, and updates on ongoing research. [:arrow_right: Go to Research](research/index.md)
+
+
+-   :material-notebook: **Notes** { .disabled }
+
+    Personal notes, cheat sheets, and reference materials. [:arrow_right: Go to Notes](notes/index.md)
+
 
 </div>
 
@@ -47,9 +52,9 @@ The site is organized into the following sections:
 !!! info "Navigation Tip"
     Use the navigation tabs at the top of the page or the sidebar to browse content. You can also search the entire documentation using the search bar (or press `s`).
 
-*   **Installing PHOENIX**: [Getting Started Guide](projects/phoenix/getting-started/installation.md)
-*   **Understanding the Mesh**: [Network Architecture](projects/phoenix/architecture/networking.md)
-*   **Contributing**: [Developer Guidelines](projects/phoenix/development/contributing.md)
+*   **Installing SkoveNet**: [Getting Started Guide](projects/skovenet/getting-started/installation.md)
+*   **Understanding the Mesh**: [Network Architecture](projects/skovenet/architecture/networking.md)
+*   **Contributing**: [Developer Guidelines](projects/skovenet/development/contributing.md)
 
 ---
 

@@ -1,13 +1,13 @@
 # Quick Start
 
-This guide will get you up and running with a private PHOENIX mesh network in minutes.
+This guide will get you up and running with a private SkoveNet mesh network in minutes.
 
 ## Running a Single Node
 
 To start a standard agent node:
 
 ```bash
-./bin/nostalgia-linux-amd64
+./bin/skovenet-linux-amd64
 ```
 
 *Replace the binary name with the one appropriate for your system.*
@@ -25,12 +25,12 @@ To simulate a mesh network on a single machine, you can run multiple instances o
 
 1.  **Terminal 1 (Node A):**
     ```bash
-    ./bin/nostalgia-linux-amd64
+    ./bin/skovenet-linux-amd64
     ```
 
 2.  **Terminal 2 (Node B):**
     ```bash
-    ./bin/nostalgia-linux-amd64
+    ./bin/skovenet-linux-amd64
     ```
 
 Watch the logs. You should see "Peer Connected" messages appearing in both terminals as they discover each other via mDNS.

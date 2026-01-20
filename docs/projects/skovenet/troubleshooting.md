@@ -1,12 +1,12 @@
 # Troubleshooting
 
-Common issues and solutions for PHOENIX operators.
+Common issues and solutions for SkoveNet operators.
 
 ## Connectivity Issues
 
 ### "No peers connected"
 *   **Cause 1**: You are running a single node. Start at least one more.
-*   **Cause 2**: Firewalls blocking the port. PHOENIX listens on a random high port by default.
+*   **Cause 2**: Firewalls blocking the port. SkoveNet listens on a random high port by default.
     *   **Fix**: Check `iptables` or Windows Firewall.
 *   **Cause 3**: Different networks. mDNS only works on local LAN.
     *   **Fix**: Use a Bootstrap node or ensure multicast is allowed between subnets.

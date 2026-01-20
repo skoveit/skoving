@@ -1,6 +1,6 @@
 # Peer Discovery
 
-Discovery is the process by which PHOENIX nodes find each other without a central server.
+Discovery is the process by which SkoveNet nodes find each other without a central server.
 
 ## 1. mDNS (Local Network)
 
@@ -12,7 +12,7 @@ Discovery is the process by which PHOENIX nodes find each other without a centra
 
 ## 2. Bootstrap Nodes (Internet)
 
-For internet-wide connectivity where multicast is not available, PHOENIX uses **Bootstrap Nodes**.
+For internet-wide connectivity where multicast is not available, SkoveNet uses **Bootstrap Nodes**.
 *   These are stable nodes with known addresses (IP:Port).
 *   New nodes connect to bootstrap nodes to join the mesh and find other peers.
 

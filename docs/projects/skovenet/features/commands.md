@@ -1,6 +1,6 @@
 # Commands & Execution
 
-The PHOENIX Controller provides a powerful CLI for interacting with the mesh.
+The SkoveNet Controller provides a powerful CLI for interacting with the mesh.
 
 ## Interactive Mode
 

@@ -1,6 +1,6 @@
 # Roadmap
 
-Our vision is to make PHOENIX the most resilient C2 framework in existence.
+Our vision is to make SkoveNet the most resilient C2 framework in existence.
 
 ## Phase 1: MVP (Completed)
 - [x] Functional P2P mesh (libp2p).

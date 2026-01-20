@@ -1,6 +1,6 @@
 # Networking & Protocol
 
-PHOENIX leverages the **libp2p** stack to provide a robust, modular networking layer.
+SkoveNet leverages the **libp2p** stack to provide a robust, modular networking layer.
 
 ## The Transport Layer
 
@@ -21,7 +21,7 @@ All connections are automatically encrypted using the **Noise Protocol Framework
 How does a command from Node A reach specific Node Z if they aren't directly connected?
 
 ### Flood Routing (Current)
-Currently, PHOENIX uses a controlled flood (gossip) mechanism for message delivery.
+Currently, SkoveNet uses a controlled flood (gossip) mechanism for message delivery.
 
 1.  **Origin**: Node A creates a message with `Target=Z` and `TTL=10`.
 2.  **Propagation**: A sends it to all connected peers (B, C).
@@ -36,7 +36,7 @@ For larger scale, we plan to migrate to **GossipSub**, a more efficient pubsub r
 
 ## NAT Traversal
 
-One of the biggest challenges in P2P is connectivity behind NATs (Network Address Translation). PHOENIX uses:
+One of the biggest challenges in P2P is connectivity behind NATs (Network Address Translation). SkoveNet uses:
 
 1.  **UPnP / NAT-PMP**: Attempts to automatically map ports on the router.
 2.  **AutoNAT**: Nodes ask peers "What is my public IP?" to determine reachability.
