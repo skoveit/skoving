@@ -1,5 +1,5 @@
 
-# Blog
+# Research
 
 <div class="coming-soon-container">
   <div class="glitch-wrapper">

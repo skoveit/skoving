@@ -15,7 +15,7 @@ Here you will find detailed documentation for my open-source projects, CTF write
 !!! quote "The Philosophy"
     **No server. No domain. No single point of failure.**
 
-[Explore PHOENIX Documentation :arrow_right:](projects/phoenix/index.md){ .md-button .md-button--primary }
+[Explore PHOENIX Documentation :arrow_right:](projects/phoenix){ .md-button .md-button--primary }
 
 ---
 
@@ -28,7 +28,7 @@ The site is organized into the following sections:
 -   :material-server-network: **Projects**
 
     Deep dives into software architecture, design docs, and user manuals.  
-    [:arrow_right: Go to Projects](projects/phoenix/index.md)
+    [:arrow_right: Go to Projects](projects/phoenix)
 
 -   :material-flag: **Writeups** { .disabled }
 
