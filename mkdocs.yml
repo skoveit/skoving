@@ -99,9 +99,14 @@ nav:
 
   - Writeups:
       - Overview: writeups/index.md
-      - 2026:
-          - From JavaScript Recon to PII Exposure: writeups/2026/PII-discl.md
+      - Web:
+          - From JavaScript Recon to PII Exposure: writeups/web/PII-discl.md
+      - Maldev:
+          - Payload Hiding: writeups/maldev/payload-Hiding.md
 
   - Research: research/index.md
 
   - Notes: notes/index.md
+
+
+  
