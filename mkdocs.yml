@@ -8,6 +8,9 @@ copyright: ""
 
 extra:
   generator: false
+  analytics:
+    provider: google
+    property: G-QTX3WF018B
 
 extra_css:
   - stylesheets/extra.css
