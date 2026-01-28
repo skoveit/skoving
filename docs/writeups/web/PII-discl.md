@@ -14,14 +14,14 @@ I started with **source code review** and asset discovery:
 
 I used a regex to extract candidate URLs/endpoints from JS, then filtered the results to “API-looking” paths
 ## Discovery: An Endpoint Returning Sensitive Data
-![alt text](image-1.png)
+![alt text](/skoving/assets/images/PII-disc-image1.png)
 
 Among the extracted endpoints, one stood out: an order status route that returned rich tracking details. The response contained fields that looked like PII and operational delivery metadata (for example: location coordinates and delivery-related identifiers).
 
 At first, the primary parameter to access the order appeared long/high-entropy, which made direct guessing impractical. I attempted light parameter analysis and fuzzing focused on obvious variations, but did not find additional behavior that way.
 
 ## The Break: A Debug Parameter in Source
-![alt text](image.png)
+![alt text](/skoving/assets/images/PII-disc-image2.png)
 
 Returning to the source, I searched specifically for:
 

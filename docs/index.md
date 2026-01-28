@@ -15,7 +15,7 @@ Here you will find detailed documentation for my open-source projects, CTF write
 !!! quote "The Philosophy"
     **No server. No domain. No single point of failure.**
 
-[Explore SkoveNet Documentation :arrow_right:](projects/skovenet){ .md-button .md-button--primary }
+[Explore SkoveNet Documentation :arrow_right:](projects/skovenet/index.md){ .md-button .md-button--primary }
 
 ---
 
@@ -28,7 +28,7 @@ The site is organized into the following sections:
 -   :material-server-network: **Projects**
 
     Deep dives into software architecture, design docs, and user manuals.  
-    [:arrow_right: Go to Projects](projects/skovenet)
+    [:arrow_right: Go to Projects](projects/skovenet/index.md)
 
 -   :material-flag: **Writeups**
 
@@ -40,7 +40,7 @@ The site is organized into the following sections:
     Technical articles, tutorials, and updates on ongoing research. [:arrow_right: Go to Research](research/index.md)
 
 
--   :material-notebook: **Notes** { .disabled }
+-   :material-notebook: **Notes** 
 
     Personal notes, cheat sheets, and reference materials. [:arrow_right: Go to Notes](notes/index.md)
 
