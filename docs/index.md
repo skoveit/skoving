@@ -55,7 +55,7 @@ The site is organized into the following sections:
 *   **Installing SkoveNet**: [Getting Started Guide](projects/skovenet/getting-started/installation.md)
 *   **Understanding the Mesh**: [Network Architecture](projects/skovenet/architecture/networking.md)
 *   **Contributing**: [Developer Guidelines](projects/skovenet/development/contributing.md)
-
+ 
 ---
 
 <small>_Maintained by Skoving._</small>
