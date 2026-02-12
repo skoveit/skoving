@@ -106,6 +106,4 @@ tcp < 445 0.0.0.0 -> 192.168.1.6 445
 # it will load the driver (singed)                                    ;) 
 StreamDivert.exe redir.conf -v 
 ```
-
- 
  
