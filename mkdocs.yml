@@ -20,11 +20,11 @@ theme:
   custom_dir: overrides
   language: en
   features:
-    - navigation.tabs              # القائمة العلوية
-    - navigation.sections          # تقسيم المحتوى لسكاشن
-    - navigation.expand            # <--- امسح السطر ده أو عطلّه
-    - navigation.path              # بيخلي المسار الحالي واضح
-    - navigation.indexes           # بيخلي العناوين الرئيسية قابلة للضغط
+    - navigation.tabs  
+    - navigation.sections       
+    - navigation.expand      
+    - navigation.path         
+    - navigation.indexes           
     - navigation.top
     - navigation.tracking
     - navigation.instant
@@ -78,24 +78,27 @@ nav:
   - SkoveNet:
       - Overview: projects/skovenet/index.md
 
-      - Getting Started:
-          - Installation: projects/skovenet/getting-started/installation.md
-          - Quickstart: projects/skovenet/getting-started/quickstart.md
+      - Tutorials:
+          - Getting Started: projects/skovenet/tutorials/getting-started.md
+          - Agent Generation: projects/skovenet/tutorials/agent-generation.md
+          - Mission Execution: projects/skovenet/tutorials/mission-execution.md
+          - Troubleshooting: projects/skovenet/tutorials/troubleshooting.md
 
-      - Architecture:
-          - Overview: projects/skovenet/architecture/overview.md
-          - Networking: projects/skovenet/architecture/networking.md
-          - Security: projects/skovenet/architecture/security.md
+      - Reference:
+          - Architecture:
+              - Overview: projects/skovenet/reference/architecture/overview.md
+              - Networking: projects/skovenet/reference/architecture/networking.md
+              - Security: projects/skovenet/reference/architecture/security.md
 
-      - Features:
-          - Discovery: projects/skovenet/features/discovery.md
-          - Commands: projects/skovenet/features/commands.md
+          - Features:
+              - Discovery: projects/skovenet/reference/features/discovery.md
+              - Commands: projects/skovenet/reference/features/commands.md
 
-      - Development:
-          - Roadmap: projects/skovenet/development/roadmap.md
-          - Contributing: projects/skovenet/development/contributing.md
+          - Development:
+              - Adding Commands: projects/skovenet/reference/development/adding-commands.md
 
-      - Troubleshooting: projects/skovenet/troubleshooting.md
+          - Roadmap: projects/skovenet/reference/roadmap.md
+          
 
   - Writeups:
       - Overview: writeups/index.md

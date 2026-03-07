@@ -1,6 +1,6 @@
 # Welcome to SkoveNet
 
-**SkoveNet** is a fully decentralized peer-to-peer (P2P) Command & Control (C2) system designed to eliminate the single point of failure inherent in traditional C2 architectures.
+**SkoveNet** (Project Nostalgia) is a fully decentralized peer-to-peer (P2P) Command & Control (C2) system designed to eliminate the single point of failure inherent in traditional C2 architectures.
 
 Unlike conventional systems that rely on a central server or specific domain, SkoveNet operates as a resilient, self-healing mesh network.
 
@@ -21,6 +21,7 @@ Traditional C2 systems work like a classic army: one central command relays orde
     *   **Cryptographic Identity**: All commands are signed with Ed25519 keys.
     *   **End-to-End Encryption**: All traffic is encrypted using the Noise protocol.
 *   **Resilient**: Zero dependencies, single binary deployment for Windows, Linux, macOS, and ARM.
+*   **Built-in Agent Commands**: Native implementation of `ls`, `ps`, `pwd`, `info`, and direct file `upload`/`download`.
 
 ## Why SkoveNet?
 
@@ -32,10 +33,20 @@ Traditional C2 systems work like a classic army: one central command relays orde
 | **Network Structure** | Hub-and-Spoke | **Mesh Graph** |
 | **Traffic Pattern** | Beaconing to Server | **Low-volume P2P Gossip** |
 
-## Getting Started
+## Tutorials
 
-Ready to dive in?
+Learn how to deploy and operate SkoveNet:
 
-*   Check out the [Installation Guide](getting-started/installation.md) to build SkoveNet.
-*   Read the [Quick Start](getting-started/quickstart.md) to run your first mesh.
-*   Explore the [Architecture](architecture/overview.md) to understand how it works under the hood.
+*   **[Getting Started](tutorials/getting-started.md)**: Environment setup and installation.
+*   **[Agent Generation](tutorials/agent-generation.md)**: Creating implants with `sgen`.
+*   **[Mission Execution](tutorials/mission-execution.md)**: Red team operations and mesh control.
+
+## Reference Documentation
+
+Deep dives into the system internals:
+
+*   **[Architecture](reference/architecture/overview.md)**: How the decentralized mesh works.
+*   **[Security Model](reference/architecture/security.md)**: Cryptography and authentication.
+*   **[Command Reference](reference/features/commands.md)**: Built-in agent capabilities.
+*   **[Developer Guide](reference/development/adding-commands.md)**: Extending SkoveNet with new commands.
+*   **[Roadmap](reference/roadmap.md)**: Future features and planned enhancements.
