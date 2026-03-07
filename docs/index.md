@@ -1,4 +1,4 @@
-# Welcome to Skoving
+<!-- # Welcome to Skoving
 
 **Skoving** is a centralized knowledge base and documentation hub for security research, software development, and decentralized systems.
 
@@ -58,4 +58,4 @@ The site is organized into the following sections:
  
 ---
 
-<small>_Maintained by Skoving._</small>
+<small>_Maintained by Skoving._</small> -->

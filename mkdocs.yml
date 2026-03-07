@@ -70,7 +70,7 @@ markdown_extensions:
 
 
 nav:
-  - Home: index.md
+#   - Home: index.md
 
   - SkoveNet:
       - Overview: projects/skovenet/index.md
@@ -97,57 +97,57 @@ nav:
           - Roadmap: projects/skovenet/reference/roadmap.md
           
 
-  - Writeups:
-      - Overview: writeups/index.md
-      - Web:
-          - FTPbox Hardcoded Credentials: writeups/web/FTPbox.md
-          - JavaScript Recon to PII Exposure: writeups/web/PII-discl.md
-      - Maldev:
-          - Payload Hiding: writeups/maldev/payload-Hiding.md
+#   - Writeups:
+#       - Overview: writeups/index.md
+#       - Web:
+#           - FTPbox Hardcoded Credentials: writeups/web/FTPbox.md
+#           - JavaScript Recon to PII Exposure: writeups/web/PII-discl.md
+#       - Maldev:
+#           - Payload Hiding: writeups/maldev/payload-Hiding.md
 
 
-  - Notes:
-      - Overview: notes/index.md
+#   - Notes:
+#       - Overview: notes/index.md
 
-      - Windows Internals:
-          - DLL: notes/windows internals/DLL.md
-          - PE Structure: notes/windows internals/PE structure.md
-          - Processes: notes/windows internals/process.md
-          - Security: notes/windows internals/security.md
-          - Memory:
-              - Memory Mapping: notes/windows internals/memory/memory mapping.md
+#       - Windows Internals:
+#           - DLL: notes/windows internals/DLL.md
+#           - PE Structure: notes/windows internals/PE structure.md
+#           - Processes: notes/windows internals/process.md
+#           - Security: notes/windows internals/security.md
+#           - Memory:
+#               - Memory Mapping: notes/windows internals/memory/memory mapping.md
 
-      - Active Directory:
-          - Certificate Services: notes/active directory/Certificate Services.md
-          - Kerberos: notes/active directory/Kerbros.md
-          - LAPS: notes/active directory/LAPS.md
-      - Red Team:
-          - Proxying: notes/red/proxying.md
-          - Windows:
-              - Active Directory Techniques: notes/red/windows/Active directory techniques.md
-              - Initial Access (0%):
-                  - AD Enumeration: notes/red/windows/0%/AD-enum.md
-                  - Zero: notes/red/windows/0%/Zero.md
-                  - Send Payload: notes/red/windows/0%/send payload.md
-              - Foothold (10%): 
-                  - Foothold: notes/red/windows/10%/foothold.md
-              - Post Exploitation (70%):
-                  - Enumeration: notes/red/windows/70%/Enum.md
-                  - Exfiltration: notes/red/windows/70%/ExFil.md
-                  - Privilege Escalation: notes/red/windows/70%/PrivEsc.md
-                  - Lateral Movement: notes/red/windows/70%/Leteral Movement/Leteral Movement.md
-                  - OPSEC: notes/red/windows/70%/OPSEC/OPSEC.md
-                  - Persistence:
-                      - AD Persistence: notes/red/windows/70%/persistence/AD persistance.md
-                      - General Persistence: notes/red/windows/70%/persistence/persistence.md
-      - Web Security:
-          - CSRF: notes/web/CSRF.md
-          - GraphQL: notes/web/GraphQL.md
-          - HTTP Request Smuggling: notes/web/HTTP request smuggling.md
-          - JWT: notes/web/JWT.md
-          - Logic Flaws: notes/web/Logic-flaws.md
-          - Race Condition: notes/web/Race Condition.md
-          - WebSocket: notes/web/WebSocket.md
+#       - Active Directory:
+#           - Certificate Services: notes/active directory/Certificate Services.md
+#           - Kerberos: notes/active directory/Kerbros.md
+#           - LAPS: notes/active directory/LAPS.md
+#       - Red Team:
+#           - Proxying: notes/red/proxying.md
+#           - Windows:
+#               - Active Directory Techniques: notes/red/windows/Active directory techniques.md
+#               - Initial Access (0%):
+#                   - AD Enumeration: notes/red/windows/0%/AD-enum.md
+#                   - Zero: notes/red/windows/0%/Zero.md
+#                   - Send Payload: notes/red/windows/0%/send payload.md
+#               - Foothold (10%): 
+#                   - Foothold: notes/red/windows/10%/foothold.md
+#               - Post Exploitation (70%):
+#                   - Enumeration: notes/red/windows/70%/Enum.md
+#                   - Exfiltration: notes/red/windows/70%/ExFil.md
+#                   - Privilege Escalation: notes/red/windows/70%/PrivEsc.md
+#                   - Lateral Movement: notes/red/windows/70%/Leteral Movement/Leteral Movement.md
+#                   - OPSEC: notes/red/windows/70%/OPSEC/OPSEC.md
+#                   - Persistence:
+#                       - AD Persistence: notes/red/windows/70%/persistence/AD persistance.md
+#                       - General Persistence: notes/red/windows/70%/persistence/persistence.md
+#       - Web Security:
+#           - CSRF: notes/web/CSRF.md
+#           - GraphQL: notes/web/GraphQL.md
+#           - HTTP Request Smuggling: notes/web/HTTP request smuggling.md
+#           - JWT: notes/web/JWT.md
+#           - Logic Flaws: notes/web/Logic-flaws.md
+#           - Race Condition: notes/web/Race Condition.md
+#           - WebSocket: notes/web/WebSocket.md
 
           
-  - Research: research/index.md
+#   - Research: research/index.md
