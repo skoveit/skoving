@@ -1,7 +1,5 @@
 # SkoveNet
 
-<img src="/skoving/assets/images/banner.jpg" alt="structure diagram" />
-
 [SkoveNet](https://github.com/skoveit/skovenet) is a decentralized Command & Control (C2) framework engineered to eliminate Single Points of Failure and ensure maximum operator anonymity.
 
 Unlike client-server C2 models, SkoveNet implements a decoupled Agent-Controller architecture. This allows the operator to interface with the network through any active node, removing the dependency on a static command center and obfuscating the operator's physical location.
@@ -17,6 +15,8 @@ Unlike client-server C2 models, SkoveNet implements a decoupled Agent-Controller
 ## Core Features
 - Fully decentralized P2P mesh network
 - Automatic self-healing topology
+- Dynamic code generation
+- Compile-time obfuscation
 - Max 5 neighbors per agent → tiny traffic footprint
 - Operator = whoever has the cryptographic secret key
 - Commands signed with Ed25519 → no spoofing
