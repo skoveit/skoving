@@ -1,3 +1,15 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
+<meta http-equiv="refresh" content="0; url=projects/skovenet/" />
+
+# Redirecting...
+
+If you are not redirected automatically, [click here](projects/skovenet/).
+
 <!-- # Welcome to Skoving
 
 **Skoving** is a centralized knowledge base and documentation hub for security research, software development, and decentralized systems.
