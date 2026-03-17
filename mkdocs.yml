@@ -99,13 +99,15 @@ nav:
 
           
 
-#   - Writeups:
-#       - Overview: writeups/index.md
-#       - Web:
-#           - FTPbox Hardcoded Credentials: writeups/web/FTPbox.md
-#           - JavaScript Recon to PII Exposure: writeups/web/PII-discl.md
-#       - Maldev:
-#           - Payload Hiding: writeups/maldev/payload-Hiding.md
+  - Writeups:
+      - Overview: writeups/index.md
+      - C2: 
+          - Sliver - Uno Reverse: writeups/C2/Sliver-UnoReverse.md
+      - Web:
+          - FTPbox Hardcoded Credentials: writeups/web/FTPbox.md
+          - JavaScript Recon to PII Exposure: writeups/web/PII-discl.md
+      - Maldev:
+          - Payload Hiding: writeups/maldev/payload-Hiding.md
 
 
 #   - Notes:
