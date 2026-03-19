@@ -1,0 +1,713 @@
+{#-
+This file was automatically generated - do not edit
+-#}
+{% extends "main.html" %}
+{% block tabs %}
+{{ super() }}
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&family=Geist+Mono:wght@300;400;500&display=swap');
+
+  :root {
+    --ink: #13110f;
+    --line: rgba(255, 255, 255, 0.07);
+    --gold: #c9a84c;
+    --cream: #ede8df;
+    --mid: #6b6560;
+    --dim: #2e2b27;
+  }
+
+  html,
+  body {
+    overflow: hidden !important;
+  }
+
+  .md-footer {
+    display: none !important;
+  }
+
+  .md-main__inner {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .md-content {
+    display: none !important;
+  }
+
+  .md-header {
+    display: none !important;
+  }
+
+  .md-tabs {
+    display: none !important;
+  }
+
+  @media screen and (min-width:60em) {
+    .md-sidebar--secondary {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width:76.25em) {
+    .md-sidebar--primary {
+      display: none;
+    }
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .s {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--ink);
+    display: grid;
+    grid-template-rows: 1fr auto;
+    overflow: hidden;
+    z-index: 10;
+    font-family: 'Geist Mono', monospace;
+    color: var(--cream);
+  }
+
+  .s::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 90% 80% at 50% 50%, transparent 40%, rgba(8, 6, 4, 0.7) 100%);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .s-hero {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0 5vw;
+    gap: 4rem;
+  }
+
+  .s-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+  }
+
+  .s-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    opacity: 0;
+    animation: up 0.7s 0.1s ease both;
+  }
+
+  .s-eyebrow-line {
+    width: 32px;
+    height: 1px;
+    background: var(--gold);
+  }
+
+  .s-eyebrow-text {
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 400;
+  }
+
+  .s-wordmark {
+    font-family: 'Cormorant', serif;
+    font-size: clamp(4.8rem, 9.5vw, 8rem);
+    font-weight: 300;
+    line-height: 0.9;
+    letter-spacing: -0.02em;
+    opacity: 0;
+    animation: up 0.9s 0.2s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .s-wordmark .w-a {
+    color: var(--cream);
+    font-style: normal;
+  }
+
+  .s-wordmark .w-b {
+    color: var(--gold);
+    font-style: italic;
+  }
+
+  .s-identity-line {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    opacity: 0;
+    animation: up 0.7s 0.32s ease both;
+  }
+
+  .s-identity-name {
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: var(--cream);
+    letter-spacing: 0.06em;
+  }
+
+  .s-identity-sep {
+    width: 1px;
+    height: 12px;
+    background: var(--dim);
+  }
+
+  .s-identity-handle {
+    font-size: 0.68rem;
+    font-weight: 300;
+    color: var(--mid);
+    letter-spacing: 0.08em;
+  }
+
+  .s-desc {
+    font-size: 0.78rem;
+    font-weight: 300;
+    color: var(--mid);
+    line-height: 1.85;
+    letter-spacing: 0.02em;
+    max-width: 380px;
+    opacity: 0;
+    animation: up 0.7s 0.44s ease both;
+  }
+
+  .s-desc strong {
+    color: var(--cream);
+    font-weight: 400;
+  }
+
+  .s-cta {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    opacity: 0;
+    animation: up 0.7s 0.56s ease both;
+  }
+
+  .s-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.6rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    transition: all 0.25s ease;
+    font-weight: 500;
+  }
+
+  .s-btn-p {
+    background: var(--gold);
+    color: var(--ink) !important;
+  }
+
+  .s-btn-p:hover {
+    background: #d4b45a;
+    transform: translateY(-2px);
+  }
+
+  .s-btn-g {
+    background: transparent;
+    color: var(--mid) !important;
+    border: 1px solid var(--dim);
+  }
+
+  .s-btn-g:hover {
+    border-color: rgba(255, 255, 255, 0.18);
+    color: var(--cream) !important;
+    transform: translateY(-2px);
+  }
+
+  .s-btn svg {
+    transition: transform 0.2s;
+  }
+
+  .s-btn-p:hover svg {
+    transform: translateX(3px);
+  }
+
+  .s-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.4rem;
+    opacity: 0;
+    animation: fadeIn 1s 0.45s ease both;
+    border-left: 1px solid var(--line);
+    padding-left: 3.5rem;
+  }
+
+  .s-label {
+    font-size: 0.52rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 0.5rem;
+  }
+
+  .s-focal {
+    padding-bottom: 1.3rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .s-focal-role {
+    font-family: 'Cormorant', serif;
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 300;
+    font-style: italic;
+    color: var(--cream);
+    line-height: 1;
+  }
+
+  .s-focal-exp {
+    font-size: 0.63rem;
+    color: var(--mid);
+    letter-spacing: 0.08em;
+    margin-top: 0.4rem;
+    display: block;
+  }
+
+  .s-focal-exp strong {
+    color: var(--cream);
+    font-weight: 400;
+  }
+
+  .s-spine {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 1.1rem;
+  }
+
+  .s-spine::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 4px;
+    bottom: 4px;
+    width: 1px;
+    background: linear-gradient(to bottom, var(--gold) 0%, rgba(201, 168, 76, 0.1) 100%);
+  }
+
+  .s-spine-item {
+    display: flex;
+    flex-direction: column;
+    padding: 0.52rem 0;
+    border-bottom: 1px solid var(--line);
+    cursor: default;
+    position: relative;
+    transition: padding-left 0.2s ease;
+  }
+
+  .s-spine-item:last-child {
+    border-bottom: none;
+  }
+
+  .s-spine-item::before {
+    content: '';
+    position: absolute;
+    left: -1.1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--dim);
+    transition: background 0.2s, box-shadow 0.2s;
+  }
+
+  .s-spine-item:hover {
+    padding-left: 0.35rem;
+  }
+
+  .s-spine-item:hover::before {
+    background: var(--gold);
+    box-shadow: 0 0 8px rgba(201, 168, 76, 0.5);
+  }
+
+  .s-spine-item:hover .s-spine-name {
+    color: var(--gold);
+  }
+
+  .s-spine-name {
+    font-family: 'Cormorant', serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--cream);
+    line-height: 1;
+    transition: color 0.2s;
+  }
+
+  .s-spine-sub {
+    font-size: 0.54rem;
+    color: var(--mid);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 0.1rem;
+  }
+
+  .s-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 0.28rem;
+  }
+
+  .s-project {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    padding: 0.3rem 0 0.3rem 0.75rem;
+    border-left: 1px solid var(--dim);
+    transition: border-color 0.2s;
+    cursor: default;
+  }
+
+  .s-project:hover {
+    border-left-color: var(--gold);
+  }
+
+  .s-project-name {
+    font-size: 0.68rem;
+    color: var(--cream);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .s-project-role {
+    font-size: 0.6rem;
+    color: var(--gold);
+    font-weight: 300;
+  }
+
+  .s-project-desc {
+    font-size: 0.6rem;
+    color: var(--mid);
+    font-weight: 300;
+  }
+
+  /* Language dots inside projects — muted warm palette */
+  .s-lang-row {
+    padding: 0.45rem 0 0.05rem 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.9rem;
+  }
+
+  .s-lang-item {
+    display: flex;
+    align-items: center;
+    gap: 0.32rem;
+    font-size: 0.57rem;
+    color: var(--mid);
+    letter-spacing: 0.06em;
+  }
+
+  .s-lang-item::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--lc);
+    flex-shrink: 0;
+  }
+
+  .s-bottom-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .s-cves {
+    display: flex;
+    gap: 0.45rem;
+    flex-wrap: wrap;
+  }
+
+  .s-cve {
+    font-size: 0.62rem;
+    letter-spacing: 0.04em;
+    color: var(--ink);
+    background: var(--gold);
+    padding: 0.14rem 0.5rem;
+  }
+
+  .s-live {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .s-live-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--gold);
+    flex-shrink: 0;
+    animation: gpulse 2.4s ease-in-out infinite;
+  }
+
+  @keyframes gpulse {
+
+    0%,
+    100% {
+      opacity: 1;
+      box-shadow: 0 0 0 0 rgba(201, 168, 76, 0.5);
+    }
+
+    50% {
+      opacity: 0.5;
+      box-shadow: 0 0 0 5px rgba(201, 168, 76, 0);
+    }
+  }
+
+  .s-live-text {
+    font-size: 0.58rem;
+    color: var(--mid);
+    letter-spacing: 0.08em;
+  }
+
+  .s-colophon {
+    position: relative;
+    z-index: 2;
+    border-top: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+    height: 52px;
+    flex-shrink: 0;
+    opacity: 0;
+    animation: up 0.7s 0.8s ease both;
+  }
+
+  .s-colophon-left {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+  }
+
+  .s-colophon-name {
+    font-family: 'Cormorant', serif;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--cream);
+    letter-spacing: 0.03em;
+  }
+
+  .s-colophon-alias {
+    font-size: 0.58rem;
+    color: var(--mid);
+    letter-spacing: 0.12em;
+  }
+
+  .s-colophon-right {
+    font-size: 0.6rem;
+    letter-spacing: 0.16em;
+    color: var(--dim);
+    text-transform: uppercase;
+  }
+
+  @keyframes up {
+    from {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .s {
+      overflow-y: auto;
+    }
+
+    .s-hero {
+      grid-template-columns: 1fr;
+      align-items: start;
+      padding: 2.5rem 5vw;
+      gap: 0;
+    }
+
+    .s-right {
+      border-left: none;
+      padding-left: 0;
+      border-top: 1px solid var(--line);
+      padding-top: 1.8rem;
+      padding-bottom: 1.8rem;
+      gap: 1.2rem;
+    }
+
+    .s-left {
+      gap: 1.4rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .s-hero {
+      padding: 2rem 1.5rem;
+    }
+
+    .s-cta {
+      flex-direction: column;
+    }
+
+    .s-btn {
+      justify-content: center;
+    }
+
+    .s-colophon-right {
+      display: none;
+    }
+
+    .s-bottom-row {
+      flex-direction: column;
+      gap: 0.8rem;
+      align-items: flex-start;
+    }
+  }
+</style>
+
+<div class="s">
+  <section class="s-hero">
+
+    <div class="s-left">
+      <div class="s-eyebrow">
+        <span class="s-eyebrow-line"></span>
+        <span class="s-eyebrow-text">Offensive Security Researcher</span>
+      </div>
+
+      <h1 class="s-wordmark"><span class="w-a">Skove</span><span class="w-b">ing</span></h1>
+
+      <div class="s-identity-line">
+        <span class="s-identity-name">Anas Mohammed</span>
+        <span class="s-identity-sep"></span>
+        <span class="s-identity-handle">Skove</span>
+      </div>
+
+      <p class="s-desc">Skoving is where I share everything worth sharing.</p>
+
+      <div class="s-cta">
+        <a href="projects/skovenet/" class="s-btn s-btn-p">
+          SkoveNet
+          <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </a>
+        <a href="notes/" class="s-btn s-btn-g">Notes</a>
+        <a href="blog/" class="s-btn s-btn-g">Writeups</a>
+      </div>
+    </div>
+
+    <div class="s-right">
+
+      <div class="s-focal">
+        <div class="s-label">Role</div>
+        <div class="s-focal-role">Red Teamer</div>
+        <span class="s-focal-exp"><strong>4+</strong> years in offensive security</span>
+      </div>
+
+      <div>
+        <div class="s-label">Specialties</div>
+        <div class="s-spine">
+          <div class="s-spine-item">
+            <span class="s-spine-name">Web &amp; API Security</span>
+            <span class="s-spine-sub">Pentesting · Bug Bounty</span>
+          </div>
+          <div class="s-spine-item">
+            <span class="s-spine-name">Active Directory</span>
+            <span class="s-spine-sub">Red Team Ops · Lateral Movement</span>
+          </div>
+          <div class="s-spine-item">
+            <span class="s-spine-name">Malware Development</span>
+            <span class="s-spine-sub">Evasion · Implants · Loaders</span>
+          </div>
+          <div class="s-spine-item">
+            <span class="s-spine-name">Source Code Review</span>
+            <span class="s-spine-sub">Vuln Analysis · Auditing</span>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="s-label">Projects</div>
+        <div class="s-projects">
+          <div class="s-project">
+            <span class="s-project-name">Sliver</span>
+            <span class="s-project-role">top contributor</span>
+            <span class="s-project-desc">· industry-leading C2</span>
+          </div>
+          <div class="s-project">
+            <span class="s-project-name">SkoveNet</span>
+            <span class="s-project-desc">decentralized C2 framework</span>
+          </div>
+          <div class="s-project">
+            <span class="s-project-name">SliverBane</span>
+            <span class="s-project-desc">attack sliver servers</span>
+          </div>
+          <div class="s-lang-row">
+            <span class="s-lang-item" style="--lc:#5b8f7a">Go</span>
+            <span class="s-lang-item" style="--lc:#b5845a">C / C++</span>
+            <span class="s-lang-item" style="--lc:#7c9cbf">Python</span>
+            <span class="s-lang-item" style="--lc:#7b6fa0">PowerShell</span>
+            <span class="s-lang-item" style="--lc:#8f6a6a">C#</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="s-bottom-row">
+        <div>
+          <div class="s-label">CVEs</div>
+          <div class="s-cves">
+            <span class="s-cve">CVE-2026-29781</span>
+            <span class="s-cve">CVE-2026-32941</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="s-colophon">
+    <div class="s-colophon-left">
+      <span class="s-colophon-name">Anas</span>
+      <span class="s-colophon-alias">/ Skove</span>
+    </div>
+    <span class="s-colophon-right">Security &amp; Systems</span>
+  </div>
+</div>
+
+{% endblock %}
+{% block content %}{% endblock %}
+{% block footer %}{% endblock %}
