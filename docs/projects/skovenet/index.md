@@ -5,7 +5,7 @@
 Unlike client-server C2 models, SkoveNet implements a decoupled Agent-Controller architecture. This allows the operator to interface with the network through any active node, removing the dependency on a static command center and obfuscating the operator's physical location.
 
 <p align="center">
-  <img src="/skoving/assets/images/structure_diagram.png" alt="structure diagram" />
+  <img src="/assets/images/structure_diagram.png" alt="structure diagram" />
   <br>
   <b>No single point of failure</b>
 </p>

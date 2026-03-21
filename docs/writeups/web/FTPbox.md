@@ -58,10 +58,10 @@ Okay, this was clearly for an FTP service but why was it here? The password cont
 Then I noticed the local path: `D:\\FTPbox_263_Portable`. This was the key. A quick search revealed that **FTPbox** is an open-source project that hasn't been updated in years. I went straight to the source code to understand why `profiles.conf` existed and why the password was stored there!
 
 It turns out the app caches credentials for a faster login experience:
-![code](/skoving/assets/images/ftpbox_savingProfile.jpeg)
+![code](/assets/images/ftpbox_savingProfile.jpeg)
 
 While auditing the code, I found something hilarious: **The AES Key and IV were seemingly hardcoded!** 
-![code](/skoving/assets/images/ftpbox_keys.jpeg)
+![code](/assets/images/ftpbox_keys.jpeg)
 
 
 ### The GitHub Dead-end
@@ -71,24 +71,24 @@ At this point, I had a plan: I could simply download the compiled version of thi
 
 I spent some time digging through old commits, hoping to find the exact moment those keys were deleted from the public repo. But after searching through the history, I found nothing it was a dead end.
 
-![github](/skoving/assets/images/ftpbox_github.png)
+![github](/assets/images/ftpbox_github.png)
 
 ### Reverse Engineering
 Since the GitHub history was clean, it was time to go back to my original plan. Since the application is built on **.NET**, I knew that no matter what the public source code says, the keys _must_ be baked into the compiled binaries they are actually shipping to users.
 
  so i downloaded the exact version of the application used by the target:
- ![download](/skoving/assets/images/fptbox_download.jpeg)
+ ![download](/assets/images/fptbox_download.jpeg)
 
 > _Fun fact: This is the latest version available, even though it hasn't been updated since 2015. Talk about legacy security._
 
-![dll](/skoving/assets/images/ftpboxdll.jpeg)
+![dll](/assets/images/ftpboxdll.jpeg)
 
 Since I had already audited the source code, I knew exactly which library handled the "dirty work." I grabbed `FTPboxlib.dll` and tossed it into **dnSpy**.
 
 > **dnSpy** decompiles .NET binaries back into readable source code 
 
 I navigated straight to the encryption class. I didn't even have to scroll.
-![dll](/skoving/assets/images/ftpbox_dnspy.jpeg)
+![dll](/assets/images/ftpbox_dnspy.jpeg)
 
 There they were. The hardcoded Key and IV, sitting right there in plain sight. so these keys aren't just for this specific server; they are the same keys used by **every single user** on this version of the app.
 
