@@ -6,14 +6,25 @@ hide:
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&family=Geist+Mono:wght@300;400;500&display=swap');
 
-:root {
-  --ink:   #1e2129;
-  --line:  rgba(255,255,255,0.1);
-  --gold:  #5e8bde;
-  --cream: #ede8df;
-  --mid:   #a09a93;
-  --dim:   #6b6560;
-}
+  /* Default variables (Dark mode/Slate) */
+  :root, [data-md-color-scheme="slate"] {
+    --ink:   #1e2129;
+    --line:  rgba(255,255,255,0.1);
+    --gold:  #5e8bde;
+    --cream: #ede8df;
+    --mid:   #a09a93;
+    --dim:   #6b6560;
+  }
+
+  /* Light mode (Default) overrides */
+  [data-md-color-scheme="default"] {
+    --ink:   #ffffff;
+    --line:  rgba(0,0,0,0.08);
+    --gold:  #3b68b8;
+    --cream: #1e2129;
+    --mid:   #5b6270;
+    --dim:   #a0a8b8;
+  }
 
 .n-wrap {
   font-family: 'Geist Mono', monospace;

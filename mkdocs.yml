@@ -61,6 +61,9 @@ theme:
   icon:
     repo: fontawesome/brands/github
 
+extra_css:
+  - stylesheets/extra.css
+
 plugins:
   - search
   - tags
@@ -99,8 +102,6 @@ markdown_extensions:
 
 
 nav:
-#   - Home: index.md
-
   - SkoveNet:
       - Overview: projects/skovenet/index.md
 
@@ -182,5 +183,5 @@ nav:
           - Race Condition: notes/web/Race Condition.md
           - WebSocket: notes/web/WebSocket.md
 
-          
-#   - Research: research/index.md
+
+  - Whoami: index.md
