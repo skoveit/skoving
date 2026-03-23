@@ -7,9 +7,10 @@ This file was automatically generated - do not edit
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&family=Geist+Mono:wght@300;400;500&display=swap');
 
-  /* Dark mode (slate) - default */
+  /* Enforce Dark mode (slate) always for home page */
   :root,
-  [data-md-color-scheme="slate"] {
+  [data-md-color-scheme="slate"],
+  [data-md-color-scheme="default"] {
     --ink: #13110f;
     --line: rgba(255, 255, 255, 0.07);
     --gold: #c9a84c;
@@ -18,19 +19,6 @@ This file was automatically generated - do not edit
     --dim: #2e2b27;
   }
 
-  /* Light mode (default) */
-  [data-md-color-scheme="default"] {
-    --ink: #ffffff;
-    --line: rgba(0, 0, 0, 0.06);
-    --gold: #8d7023;
-    /* Darker gold for contrast on light background */
-    --cream: #13110f;
-    /* Dark text */
-    --mid: #5b5652;
-    /* Secondary text */
-    --dim: #d1cbc5;
-    /* Borders/muted */
-  }
 
   html,
   body {
