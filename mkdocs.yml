@@ -1,5 +1,7 @@
 site_name: skoving
 site_url: https://skoveit.github.io/
+site_description: "Skoving - Writeups, notes and projects by Anas Mohammed (Skove), offensive security researcher specializing in Red Teaming, Web Security, and Malware Development."
+site_author: "Anas Mohammed"
 
 copyright: ""
 
@@ -124,7 +126,6 @@ nav:
           - Development:
               - Adding Commands: projects/skovenet/reference/development/adding-commands.md
 
-          - Roadmap: projects/skovenet/reference/roadmap.md
           - Why SkoveNet: projects/skovenet/why.md
 
           

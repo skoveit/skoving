@@ -5,5 +5,22 @@ This file was automatically generated - do not edit
 
 {% block extrahead %}
 <meta name="google-site-verification" content="EM5_p-hZ5hn9yo7Q4IDcOCgQPjWIcrB5mJHLakNlkgA" />
+<!-- Open Graph -->
+<meta property="og:site_name" content="Skoving" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://skoveit.github.io{{ page.url }}" />
+<meta property="og:image" content="https://skoveit.github.io/assets/images/profile.jpg" />
+<meta property="og:title"
+    content="{% if page.title %}{{ page.title }} — Skoving{% else %}Skoving — Offensive Security Research{% endif %}" />
+<meta property="og:description"
+    content="{% if page.meta.description %}{{ page.meta.description }}{% else %}Research and notes by Anas Mohammed (Skove) — Red Teaming, Web Security, Malware Development.{% endif %}" />
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@skoveit" />
+<meta name="twitter:image" content="https://skoveit.github.io/assets/images/profile.jpg" />
+<meta name="twitter:title"
+    content="{% if page.title %}{{ page.title }} — Skoving{% else %}Skoving — Offensive Security Research{% endif %}" />
+<meta name="twitter:description"
+    content="{% if page.meta.description %}{{ page.meta.description }}{% else %}Research and notes by Anas Mohammed (Skove) — Red Teaming, Web Security, Malware Development.{% endif %}" />
 {% include "partials/clarity.html" %}
 {% endblock %}
