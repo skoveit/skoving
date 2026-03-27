@@ -210,6 +210,7 @@ hide:
     <button class="wr-pill" data-filter="c2">C2</button>
     <button class="wr-pill" data-filter="web">Web</button>
     <button class="wr-pill" data-filter="maldev">Maldev</button>
+    <button class="wr-pill" data-filter="chain">Chain</button>
   </div>
 
   <div class="wr-list" id="wr-list">
@@ -228,7 +229,7 @@ hide:
     <a href="chain/mcp-security.html" class="wr-card" data-cat="chain">
       <span class="wr-num">02</span>
       <div class="wr-card-body">
-        <div class="wr-tag">Web &amp; C2 Security</div>
+        <div class="wr-tag">Chain Research</div>
         <div class="wr-card-name">MCP Servers — One Click to Compromise</div>
         <div class="wr-card-desc">Analyzing a critical CORS and authentication flaw in mcp-go affecting Nhost and Sliver C2 infrastructure.</div>
       </div>
