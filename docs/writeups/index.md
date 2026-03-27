@@ -219,7 +219,7 @@ hide:
       <span class="wr-num">01</span>
       <div class="wr-card-body">
         <div class="wr-tag">Command &amp; Control</div>
-        <div class="wr-card-name">Sliver — Uno Reverse</div>
+        <div class="wr-card-name">Sliver  - Uno Reverse</div>
         <div class="wr-card-desc">Reversing Sliver C2 traffic to identify detection opportunities and undermine C2 infrastructure.</div>
       </div>
       <span class="wr-arrow">→</span>
@@ -230,7 +230,7 @@ hide:
       <span class="wr-num">02</span>
       <div class="wr-card-body">
         <div class="wr-tag">Chain Research</div>
-        <div class="wr-card-name">MCP Servers — One Click to Compromise</div>
+        <div class="wr-card-name">MCP Servers  - One Click to Compromise</div>
         <div class="wr-card-desc">Analyzing a critical CORS and authentication flaw in mcp-go affecting Nhost and Sliver C2 infrastructure.</div>
       </div>
       <span class="wr-arrow">→</span>
@@ -268,7 +268,7 @@ hide:
 
   </div>
 
-  <div class="wr-empty" id="wr-empty">no results — try a different filter</div>
+  <div class="wr-empty" id="wr-empty">no results  - try a different filter</div>
 
 </div>
 
