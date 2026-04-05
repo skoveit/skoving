@@ -95,3 +95,13 @@ Once you have selected a peer via `use`, these commands are sent directly to the
     Deselected peer
     [2 peers]> 
     ```
+
+## MCP Mode (AI Integration)
+
+The controller can run as an **MCP stdio server**, enabling AI assistants to drive the mesh autonomously.
+
+```bash
+./controller --mcp
+```
+
+In this mode all interactive CLI functionality is replaced by a JSON-RPC 2.0 protocol session. See the **[MCP Server reference](mcp.md)** for full setup instructions, tool definitions, and a Claude Desktop configuration example.

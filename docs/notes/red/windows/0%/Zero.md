@@ -32,7 +32,7 @@ rpcclient $> queryuser <RID>
 - powershell AD Module
 - powerview 
 - cmd net user /domain
-- LDAP Queries -> [[skove/skoving/notes/red/windows/0%/AD-enum#Enum]] 
+- LDAP Queries -> [[/notes/red/windows/0%/AD-enum#Enum]] 
 - SharpHound
 
 

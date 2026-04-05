@@ -1,7 +1,7 @@
 
 ping pong 
 this is simple protocol to make long sessions. chat program or gaming stuff 
-But the handshake maybe vulnarable to [[skove/skoving/notes/web/CSRF]] attack
+But the handshake maybe vulnarable to [[/notes/web/CSRF]] attack
 
 so i can dump and make every thing you can do.
 

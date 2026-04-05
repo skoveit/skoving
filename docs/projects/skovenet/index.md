@@ -25,6 +25,7 @@ Unlike client-server C2 models, SkoveNet implements a decoupled Agent-Controller
 - Single binary, zero dependencies – works on Windows, Linux, macOS, ARM
 - NAT traversal & hole punching built-in
 - **`sgen`** — standalone agent generator (no Go toolchain required)
+- **MCP server** — AI assistant integration
 
 ## How It Works
 Every machine in the network runs an **agent**. The agent is the network. it connects to peers, receives commands, and executes them. The **controller** is just a local CLI that talks to the agent running on your machine. It's how you, the operator, interact with the network. If you are not on the network yet, run **agent** to join, then run **controller**.
@@ -50,5 +51,6 @@ Deep dives into the system internals:
 *   **[Architecture](reference/architecture/overview.md)**: How the decentralized mesh works.
 *   **[Security Model](reference/architecture/security.md)**: Cryptography and authentication.
 *   **[Command Reference](reference/features/commands.md)**: Built-in agent capabilities.
+*   **[MCP Server](reference/features/mcp.md)**: AI assistant integration (Claude Desktop, Cursor).
 *   **[Developer Guide](reference/development/adding-commands.md)**: Extending SkoveNet with new commands.
 *   **[Roadmap](reference/roadmap.md)**: Future features and planned enhancements.
