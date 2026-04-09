@@ -123,6 +123,7 @@ nav:
           - Features:
               - Discovery: projects/skovenet/reference/features/discovery.md
               - Commands: projects/skovenet/reference/features/commands.md
+              - MCP: projects/skovenet/reference/features/mcp.md
 
           - Development:
               - Adding Commands: projects/skovenet/reference/development/adding-commands.md
